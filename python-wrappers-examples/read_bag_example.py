@@ -37,8 +37,10 @@ try:
 
     # Create a config object
     config = rs.config()
+    
     # Tell config that we will use a recorded device from filem to be used by the pipeline through playback.
     rs.config.enable_device_from_file(config, args.input)
+
     # Configure the pipeline to stream the depth stream
     config.enable_stream(rs.stream.depth, 1280, 720, rs.format.z16, 30)
 
@@ -49,7 +51,7 @@ try:
     cv2.namedWindow("Depth Stream", cv2.WINDOW_AUTOSIZE)
     
     # Create colorizer object
-    colorizer = rs.colorizer();
+    colorizer = rs.colorizer()
 
     # Streaming loop
     while True:

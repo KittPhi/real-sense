@@ -1,15 +1,21 @@
-# Python Samples for Intel® RealSense™ cameras
+# Python Samples for Intel® RealSense™ camera
+Author: Kitt Phi
+Date: 7/8/2020
 
 ## Create Virutual Environment for python3.7:
-> sudo apt install python3.7 
+Install Python3.7
+> sudo apt install python3.7
 
+Install Python Virtual Environment and Pip
 > sudo apt-get install python3-pip python3.7-venv python3.7-dev
 
+Create Virtual Environment
 > python3.7 -m venv venv3.7
 
+Activate Virutal Environment and For every new terminal
 > source venv3.7/bin/activate
 
-## Configure Python and Install Libraries:
+## Install Python Libraries:
 > pip install opencv-python matplotlib numpy pyrealsense2
 
 > sudo apt-get install python3-tk
@@ -45,7 +51,6 @@ or `GettingStartedGuide_V16_tag2.3.1.docx`
                 "python.pythonPath": "venv3.7/bin/python",
                 "python.linting.pylintArgs": ["--generate-members"] 
         }
-
 
 # pyrealsense2 wrapper for RealSense SDK 2
 [Follow Install](https://github.com/IntelRealSense/librealsense/tree/master/wrappers/python) 
