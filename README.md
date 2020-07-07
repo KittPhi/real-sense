@@ -58,3 +58,6 @@ google-chrome index.html
 /models # contains copies of the skeleton-tracking models
         # >>> must stay in default directories.
 
+##  Fix no member or no module errors:
+## VS code ( no member error cv2):
+edit .vscode > settings.json and add "python.linting.pylintArgs": ["--generate-members"]
